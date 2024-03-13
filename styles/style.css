@@ -5,14 +5,15 @@
 }
 
 body {
-    background: url(../assets/images/portfolio_hero_two.jpg);
-    background-size: 99.9%;
+    background-color: rgba(186, 85, 211, 0.5);
+    /* background: url(../assets/images/portfolio_hero_two.jpg);
+    background-size: 99.9%; */
     padding-top: 20vh;
 }
 
 #body-wrapper {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 80%;
+    background-color: rgba(255, 228, 181, 0.7);
+    width: 90%;
     margin: auto;
     border-radius: 15px;
 }
@@ -32,6 +33,7 @@ body {
 }
 
 .main_title {
+    font-size: 2.5em;
 }
 
 .navbar {
@@ -50,29 +52,15 @@ body {
 .navbar ul li:nth-child(1),
 .navbar ul li:nth-child(2),
 .navbar ul li:nth-child(3) {
-    border-right: solid 2px yellow;
+    border-right: solid 2px white;
 }
-
-/* #hero {
-    width: 100%;
-    height: 50vh;
-    background: url(../assets/images/portfolio_hero_two.jpg);
-    background-size: 99.9%;
-} */
-
-/* #hero img {
-    transform: rotate(90deg);
-    
-    height: 100%;
-    
-} */
 
 .main_section {
     width: 75%;
     margin: auto;
     display: flex;
     flex-direction: row;
-    flex-flow: row wrap;
+    flex-flow: wrap;
 }
 
 .main_section section {
@@ -81,7 +69,7 @@ body {
 }
 
 #about_me {
-    background-color: rgba(186, 85, 211, 0.7);
+    background-color: rgba(30, 144, 255, 0.8);
     width: 100%;
     padding: 1em;
     flex-grow: 1;
@@ -92,6 +80,7 @@ body {
 
 .app_link {
     background-color: rgba(18, 22, 25, 0.2);
+    border-radius: 0 0 15px 15px;
 }
 
 .app_link:hover {
@@ -100,14 +89,13 @@ body {
 }
 
 #first_project {
-    width: 100%;
-    height: 250px;
+    width: 45%;
     background-color: lightskyblue;
     overflow: hidden;
     position: relative;
 }
 
-#first_project #happy_plate {
+#happy_plate {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -117,27 +105,30 @@ body {
     color: #ff69b4;
     background-color: #fff8dc;
     padding: 10px;
-    font-size: 80px;
+    font-size: 40px;
     z-index: 10;
     position: absolute;
-    top: calc(50% - 56px);
-    left: calc(50% - 212.225px);
+    top: calc(50% - 33px);
+    left: calc(50% - 111.115px);
     border-radius: 15px;
 }
 
-#first_project img {
+#happy_plate img {
     display: block;
-    width: 33%;
+    width: 43%;
 }
 
-#second_project {
-    background-color: #CFBEF2;
-    height: 150px;
-    overflow: hidden;
+#second_and_third_project {
     width: 45%;
+    overflow: hidden;
 }
 
-#second_project #sky_watcher {
+#sky_watcher {
+    background-color: #CFBEF2;
+    border-radius: 0 0 15px 15px;
+}
+
+#sky_watcher a {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -151,24 +142,27 @@ body {
     background-image: linear-gradient(to right, #ff69b4, #8a2be2);
 }
 
-#second_project img {
-    width: 90%;
-    height: 90%;
+#sky_watcher img {
+    width: 38%;
     margin: 5px;
 }
 
-#third_project {
-    height: 150px;
+#second_and_third_project #cafe_du_coast {
+    height: 140px;
     overflow: hidden;
     position: relative;
-    width: 45%;
 }
 
-#third_project #cafe_du_coast {
+#cafe_du_coast {
+    margin-top: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+#cafe_du_coast a {
     height: 100%;
 }
 
-#third_project img {
+#cafe_du_coast img {
     width: 100%;
     height: 100%;
 }
