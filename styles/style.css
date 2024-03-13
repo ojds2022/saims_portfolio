@@ -49,6 +49,11 @@ body {
     padding: 0 8px;
 }
 
+.navbar ul li:hover {
+    cursor: pointer;
+    color: white;
+}
+
 .navbar ul li:nth-child(1),
 .navbar ul li:nth-child(2),
 .navbar ul li:nth-child(3) {
@@ -201,4 +206,7 @@ body {
     background-color: rgb(30, 144, 255);
     height: 20vh;
     margin-top: 30px;
+    padding-top: 2em;
+    color: yellow;
+    text-align: center;
 }
