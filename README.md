@@ -3,4 +3,4 @@
 
 The live version of this project can be accessed at:
 
-![Application Screenshot](./docs/assets/images/saim_portfolio.jpg "Application Screenshot")
+![Application Screenshot](./assets/images/saim_portfolio.jpg "Application Screenshot")
