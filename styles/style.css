@@ -9,14 +9,14 @@ body {
     padding-top: 20vh;
 }
 
-#body-wrapper {
+ #body-wrapper { /* lines the body tags  */
     background-color: rgba(255, 228, 181, 0.7);
     width: 90%;
     margin: auto;
     border-radius: 15px;
 }
 
-.header {
+.header { /* styles the header and navbar section  */
     background-color: rgba(30, 144, 255, 0.8);
     padding: 40px 15px 0 15px;
     color: yellow;
@@ -46,25 +46,28 @@ body {
     padding: 0 8px;
 }
 
-.navbar ul li:hover {
-    cursor: pointer;
-    color: white;
-}
-
 .navbar ul li:nth-child(1),
-.navbar ul li:nth-child(2) {
+.navbar ul li:nth-child(2),
+.navbar ul li:nth-child(3) {  /* adds a border to the right of navbar links  */
     border-right: solid 2px yellow;
 }
 
 .navbar a {
     text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    background-color: rgba(186, 85, 211, 0.3);
 }
 
 .navbar a:visited {
     color: inherit;
 }
 
-.main_section {
+.main_section { /* section that contains all the page's main content  */
     width: 75%;
     margin: auto;
     display: flex;
@@ -72,12 +75,12 @@ body {
     flex-flow: wrap;
 }
 
-.main_section section {
+.main_section section { /* styles each individual section  */
     border-radius: 15px;
     margin: 1em;
 }
 
-#headshot {
+#headshot { /* styles the section that contains my headshot  */
     width: 20%;
 }
 
@@ -87,17 +90,17 @@ body {
  margin-top: 1em;
 }
 
-#about_me {
+#about_me { /* styles my about me section  */
     width: 70%;
     background-color: rgba(30, 144, 255, 0.8);
     padding: 1em;
-    flex-grow: 1;
+    flex-shrink: 2;
     color: white;
     font-size: 1.4em;
     text-align: center;
 }
 
-.app_link {
+.app_link { /* styles each individual app link  */
     background-color: rgba(18, 22, 25, 0.2);
     border-radius: 0 0 15px 15px;
 }
@@ -107,7 +110,7 @@ body {
     cursor: pointer;
 }
 
-#first_project {
+#first_project { /* styles the section that contains my first project  */
     width: 45%;
     background-color: lightskyblue;
     overflow: hidden;
@@ -137,7 +140,7 @@ body {
     width: 43%;
 }
 
-#second_and_third_project {
+#second_and_third_project { /* styles the section that contains my 2nd and 3rd projects  */
     width: 45%;
     overflow: hidden;
 }
@@ -193,7 +196,7 @@ body {
     left: calc(50% - 95.835px);
 }
 
-#contact_me {
+#contact_me { /* styles the contact me section  */
     background-color: rgba(186, 85, 211, 0.7);
     width: 100%;
     padding: 1em 1em 0 1em;
@@ -208,13 +211,29 @@ body {
     margin-bottom: 1em;
 }
 
-#footer {
+#footer { /* styles footer section  */
     background-color: rgb(30, 144, 255);
     height: 20vh;
     margin-top: 30px;
     padding-top: 2em;
     color: yellow;
     text-align: center;
+}
+
+@media screen and (max-width: 1136px) { /* adds responsiveness to homepage  */
+    #headshot {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #headshot img {
+        width: 30%;
+    }
+
+    #about_me {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
