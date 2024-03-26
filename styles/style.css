@@ -77,9 +77,19 @@ body {
     margin: 1em;
 }
 
+#headshot {
+    width: 20%;
+}
+
+#headshot img {
+ width: 100%;
+ border-radius: 50%;
+ margin-top: 1em;
+}
+
 #about_me {
+    width: 70%;
     background-color: rgba(30, 144, 255, 0.8);
-    width: 100%;
     padding: 1em;
     flex-grow: 1;
     color: white;
