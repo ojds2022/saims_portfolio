@@ -16,6 +16,10 @@ body {
     border-radius: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header { /* styles the header and navbar section  */
     background-color: rgba(30, 144, 255, 0.8);
     padding: 40px 15px 0 15px;
@@ -53,7 +57,6 @@ body {
 }
 
 .navbar a {
-    text-decoration: none;
     padding: 5px;
     border-radius: 5px;
 }
@@ -68,7 +71,7 @@ body {
 }
 
 .main_section { /* section that contains all the page's main content  */
-    width: 75%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -85,9 +88,9 @@ body {
 }
 
 #headshot img {
- width: 100%;
- border-radius: 50%;
- margin-top: 1em;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 1em;
 }
 
 #about_me { /* styles my about me section  */
@@ -102,7 +105,7 @@ body {
 
 .app_link { /* styles each individual app link  */
     background-color: rgba(18, 22, 25, 0.2);
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
 }
 
 .app_link:hover {
@@ -153,7 +156,6 @@ body {
 #sky_watcher a {
     display: flex;
     flex-direction: row;
-    text-decoration: none;
 }
 
 #sky_watcher_title {
@@ -169,15 +171,12 @@ body {
     margin: 5px;
 }
 
-#second_and_third_project #cafe_du_coast {
-    height: 140px;
-    overflow: hidden;
-    position: relative;
-}
-
 #cafe_du_coast {
     margin-top: 20px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
 }
 
 #cafe_du_coast img {
@@ -194,6 +193,33 @@ body {
     position: absolute;
     top: 10px;
     left: calc(50% - 95.835px);
+}
+
+#goat_cal_tracker {
+    height: 110px;
+    background-color: #552583;
+    margin-top: 20px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+/* #goat_cal_tracker:hover {
+    background-color: #fdb927;
+} */
+
+#goat_cal_tracker a {
+    display: flex;
+    flex-direction: column;
+}
+
+#goat_cal_tracker_title {
+    margin: auto;
+    color: #fdb927;
+}
+
+#goat_cal_tracker img {
+    width: 25%;
+    margin: auto;
 }
 
 #contact_me { /* styles the contact me section  */
