@@ -148,27 +148,26 @@ a {
     overflow: hidden;
 }
 
-#sky_watcher {
-    background-color: #CFBEF2;
-    border-radius: 0 0 15px 15px;
+#goat_eCommerce {
+    background-color: #fdb927;
+    margin-top: 20px;
+    border-radius: 15px;
+    position: relative;
 }
 
-#sky_watcher a {
+#goat_eCommerce a {
     display: flex;
     flex-direction: row;
 }
 
-#sky_watcher_title {
-    font-size: 40px;
-    margin: 35px 10px 30px 30px;
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(to right, #ff69b4, #8a2be2);
+#goat_eCommerce_title {
+    margin: auto;
+    color: #552583;
 }
 
-#sky_watcher img {
-    width: 38%;
-    margin: 5px;
+#goat_eCommerce img {
+    width: 25%;
+    margin: auto;
 }
 
 #cafe_du_coast {
